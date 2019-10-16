@@ -23,6 +23,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh Client
@@ -50,6 +51,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh DataSourceVSphereComputeCluster
@@ -77,6 +79,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh DataSourceVSphereCustomAttribute
@@ -104,6 +107,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh DataSourceVSphereDatacenter
@@ -131,6 +135,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh DataSourceVSphereDatastore
@@ -158,6 +163,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh DataSourceVSphereDatastoreCluster
@@ -185,6 +191,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh DataSourceVSphereDistributedVirtualSwitch
@@ -212,6 +219,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh DataSourceVSphereFolder
@@ -239,6 +247,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh DataSourceVSphereHost
@@ -266,6 +275,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh DataSourceVSphereNetwork
@@ -293,6 +303,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh DataSourceVSphereResourcePool
@@ -320,6 +331,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh DataSourceVSphereTag
@@ -347,6 +359,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh DataSourceVSphereTagCategory
@@ -374,6 +387,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh DataSourceVSphereVAppContainer
@@ -401,6 +415,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh DataSourceVSphereVirtualMachine
@@ -428,6 +443,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh DataSourceVSphereVmfsDisks
@@ -455,6 +471,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereComputeCluster
@@ -482,6 +499,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereComputeClusterHostGroup
@@ -509,6 +527,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereComputeClusterVMAffinityRule
@@ -536,6 +555,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereComputeClusterVMAntiAffinityRule
@@ -563,6 +583,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereComputeClusterVMDependencyRule
@@ -590,6 +611,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereComputeClusterVMGroup
@@ -617,6 +639,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereComputeClusterVMHostRule
@@ -644,6 +667,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereCustomAttribute
@@ -671,6 +695,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereDatacenter
@@ -698,6 +723,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereDatastoreCluster
@@ -725,6 +751,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereDatastoreClusterVMAntiAffinityRule
@@ -752,6 +779,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereDistributedPortGroup
@@ -779,6 +807,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereDistributedVirtualSwitch
@@ -806,6 +835,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereDPMHostOverride
@@ -833,6 +863,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereDRSVMOverride
@@ -860,6 +891,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereFile
@@ -887,6 +919,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereFolder
@@ -914,6 +947,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereHAVMOverride
@@ -941,6 +975,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereHost
@@ -968,6 +1003,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereHostPortGroup
@@ -995,6 +1031,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereHostVirtualSwitch
@@ -1022,6 +1059,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereLicense
@@ -1049,6 +1087,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereNasDatastore
@@ -1076,6 +1115,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereResourcePool
@@ -1103,6 +1143,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereStorageDrsVMOverride
@@ -1130,6 +1171,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereTag
@@ -1157,6 +1199,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereTagCategory
@@ -1184,6 +1227,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereVAppContainer
@@ -1211,6 +1255,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereVAppEntity
@@ -1238,6 +1283,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereVirtualDisk
@@ -1265,6 +1311,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereVirtualMachine
@@ -1292,6 +1339,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereVirtualMachineSnapshot
@@ -1319,6 +1367,7 @@ jobs:
         command: |
           go get -u github.com/vmware/govmomi/govc
     - run:
+        no_output_timeout: 30m
         name: "Run Acceptance Tests"
         command: |
           $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereVmfsDatastore
