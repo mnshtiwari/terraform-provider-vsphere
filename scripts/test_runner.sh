@@ -2,7 +2,6 @@
 
 main () {
   testList=$(TF_ACC=1 go test github.com/terraform-providers/terraform-provider-vsphere/vsphere | grep "\-\-\- FAIL" | awk '{ print $3 }' | grep TestAcc$1_)
-  count=$(echo $testList | wc -w)
   for testName in $testList; do 
     runTest $testName
   done
@@ -30,4 +29,4 @@ revertAndWait () {
   done
 }
 
-main
+main $1
