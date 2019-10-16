@@ -1375,6 +1375,13 @@ jobs:
 workflows:
   version: 2
   commit:
+    triggers:
+      - schedule:
+          cron: "0 3 * * *"
+          filters: 
+            branches:
+              only:
+                - master
     jobs:
       - test_acc_Client
       - test_acc_DataSourceVSphereComputeCluster:

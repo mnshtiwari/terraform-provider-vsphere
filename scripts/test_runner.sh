@@ -1,10 +1,12 @@
 #!/bin/bash
 
 main () {
+  eCode=0
   testList=$(TF_ACC=1 go test github.com/terraform-providers/terraform-provider-vsphere/vsphere | grep "\-\-\- FAIL" | awk '{ print $3 }' | grep TestAcc$1_)
   for testName in $testList; do 
-    runTest $testName
+    runTest $testName  || eCode=1
   done
+  exit eCode
 }
 
 runTest () {
@@ -15,9 +17,11 @@ runTest () {
     else
       revertAndWait
       sleep 30
+      return 1
     fi
   done
   echo "$res"
+  return 0
 }
 
 
