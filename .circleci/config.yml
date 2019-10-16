@@ -9,8 +9,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -25,7 +25,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh Client
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh Client
 
   test_acc_DataSourceVSphereComputeCluster:
     docker: 
@@ -36,8 +36,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -52,7 +52,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh DataSourceVSphereComputeCluster
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh DataSourceVSphereComputeCluster
 
   test_acc_DataSourceVSphereCustomAttribute:
     docker: 
@@ -63,8 +63,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -79,7 +79,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh DataSourceVSphereCustomAttribute
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh DataSourceVSphereCustomAttribute
 
   test_acc_DataSourceVSphereDatacenter:
     docker: 
@@ -90,8 +90,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -106,7 +106,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh DataSourceVSphereDatacenter
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh DataSourceVSphereDatacenter
 
   test_acc_DataSourceVSphereDatastore:
     docker: 
@@ -117,8 +117,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -133,7 +133,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh DataSourceVSphereDatastore
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh DataSourceVSphereDatastore
 
   test_acc_DataSourceVSphereDatastoreCluster:
     docker: 
@@ -144,8 +144,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -160,7 +160,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh DataSourceVSphereDatastoreCluster
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh DataSourceVSphereDatastoreCluster
 
   test_acc_DataSourceVSphereDistributedVirtualSwitch:
     docker: 
@@ -171,8 +171,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -187,7 +187,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh DataSourceVSphereDistributedVirtualSwitch
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh DataSourceVSphereDistributedVirtualSwitch
 
   test_acc_DataSourceVSphereFolder:
     docker: 
@@ -198,8 +198,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -214,7 +214,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh DataSourceVSphereFolder
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh DataSourceVSphereFolder
 
   test_acc_DataSourceVSphereHost:
     docker: 
@@ -225,8 +225,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -241,7 +241,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh DataSourceVSphereHost
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh DataSourceVSphereHost
 
   test_acc_DataSourceVSphereNetwork:
     docker: 
@@ -252,8 +252,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -268,7 +268,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh DataSourceVSphereNetwork
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh DataSourceVSphereNetwork
 
   test_acc_DataSourceVSphereResourcePool:
     docker: 
@@ -279,8 +279,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -295,7 +295,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh DataSourceVSphereResourcePool
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh DataSourceVSphereResourcePool
 
   test_acc_DataSourceVSphereTag:
     docker: 
@@ -306,8 +306,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -322,7 +322,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh DataSourceVSphereTag
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh DataSourceVSphereTag
 
   test_acc_DataSourceVSphereTagCategory:
     docker: 
@@ -333,8 +333,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -349,7 +349,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh DataSourceVSphereTagCategory
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh DataSourceVSphereTagCategory
 
   test_acc_DataSourceVSphereVAppContainer:
     docker: 
@@ -360,8 +360,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -376,7 +376,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh DataSourceVSphereVAppContainer
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh DataSourceVSphereVAppContainer
 
   test_acc_DataSourceVSphereVirtualMachine:
     docker: 
@@ -387,8 +387,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -403,7 +403,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh DataSourceVSphereVirtualMachine
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh DataSourceVSphereVirtualMachine
 
   test_acc_DataSourceVSphereVmfsDisks:
     docker: 
@@ -414,8 +414,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -430,7 +430,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh DataSourceVSphereVmfsDisks
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh DataSourceVSphereVmfsDisks
 
   test_acc_ResourceVSphereComputeCluster:
     docker: 
@@ -441,8 +441,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -457,7 +457,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereComputeCluster
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereComputeCluster
 
   test_acc_ResourceVSphereComputeClusterHostGroup:
     docker: 
@@ -468,8 +468,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -484,7 +484,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereComputeClusterHostGroup
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereComputeClusterHostGroup
 
   test_acc_ResourceVSphereComputeClusterVMAffinityRule:
     docker: 
@@ -495,8 +495,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -511,7 +511,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereComputeClusterVMAffinityRule
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereComputeClusterVMAffinityRule
 
   test_acc_ResourceVSphereComputeClusterVMAntiAffinityRule:
     docker: 
@@ -522,8 +522,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -538,7 +538,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereComputeClusterVMAntiAffinityRule
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereComputeClusterVMAntiAffinityRule
 
   test_acc_ResourceVSphereComputeClusterVMDependencyRule:
     docker: 
@@ -549,8 +549,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -565,7 +565,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereComputeClusterVMDependencyRule
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereComputeClusterVMDependencyRule
 
   test_acc_ResourceVSphereComputeClusterVMGroup:
     docker: 
@@ -576,8 +576,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -592,7 +592,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereComputeClusterVMGroup
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereComputeClusterVMGroup
 
   test_acc_ResourceVSphereComputeClusterVMHostRule:
     docker: 
@@ -603,8 +603,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -619,7 +619,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereComputeClusterVMHostRule
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereComputeClusterVMHostRule
 
   test_acc_ResourceVSphereCustomAttribute:
     docker: 
@@ -630,8 +630,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -646,7 +646,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereCustomAttribute
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereCustomAttribute
 
   test_acc_ResourceVSphereDatacenter:
     docker: 
@@ -657,8 +657,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -673,7 +673,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereDatacenter
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereDatacenter
 
   test_acc_ResourceVSphereDatastoreCluster:
     docker: 
@@ -684,8 +684,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -700,7 +700,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereDatastoreCluster
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereDatastoreCluster
 
   test_acc_ResourceVSphereDatastoreClusterVMAntiAffinityRule:
     docker: 
@@ -711,8 +711,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -727,7 +727,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereDatastoreClusterVMAntiAffinityRule
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereDatastoreClusterVMAntiAffinityRule
 
   test_acc_ResourceVSphereDistributedPortGroup:
     docker: 
@@ -738,8 +738,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -754,7 +754,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereDistributedPortGroup
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereDistributedPortGroup
 
   test_acc_ResourceVSphereDistributedVirtualSwitch:
     docker: 
@@ -765,8 +765,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -781,7 +781,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereDistributedVirtualSwitch
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereDistributedVirtualSwitch
 
   test_acc_ResourceVSphereDPMHostOverride:
     docker: 
@@ -792,8 +792,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -808,7 +808,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereDPMHostOverride
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereDPMHostOverride
 
   test_acc_ResourceVSphereDRSVMOverride:
     docker: 
@@ -819,8 +819,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -835,7 +835,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereDRSVMOverride
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereDRSVMOverride
 
   test_acc_ResourceVSphereFile:
     docker: 
@@ -846,8 +846,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -862,7 +862,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereFile
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereFile
 
   test_acc_ResourceVSphereFolder:
     docker: 
@@ -873,8 +873,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -889,7 +889,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereFolder
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereFolder
 
   test_acc_ResourceVSphereHAVMOverride:
     docker: 
@@ -900,8 +900,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -916,7 +916,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereHAVMOverride
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereHAVMOverride
 
   test_acc_ResourceVSphereHost:
     docker: 
@@ -927,8 +927,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -943,7 +943,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereHost
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereHost
 
   test_acc_ResourceVSphereHostPortGroup:
     docker: 
@@ -954,8 +954,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -970,7 +970,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereHostPortGroup
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereHostPortGroup
 
   test_acc_ResourceVSphereHostVirtualSwitch:
     docker: 
@@ -981,8 +981,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -997,7 +997,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereHostVirtualSwitch
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereHostVirtualSwitch
 
   test_acc_ResourceVSphereLicense:
     docker: 
@@ -1008,8 +1008,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -1024,7 +1024,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereLicense
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereLicense
 
   test_acc_ResourceVSphereNasDatastore:
     docker: 
@@ -1035,8 +1035,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -1051,7 +1051,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereNasDatastore
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereNasDatastore
 
   test_acc_ResourceVSphereResourcePool:
     docker: 
@@ -1062,8 +1062,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -1078,7 +1078,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereResourcePool
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereResourcePool
 
   test_acc_ResourceVSphereStorageDrsVMOverride:
     docker: 
@@ -1089,8 +1089,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -1105,7 +1105,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereStorageDrsVMOverride
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereStorageDrsVMOverride
 
   test_acc_ResourceVSphereTag:
     docker: 
@@ -1116,8 +1116,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -1132,7 +1132,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereTag
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereTag
 
   test_acc_ResourceVSphereTagCategory:
     docker: 
@@ -1143,8 +1143,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -1159,7 +1159,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereTagCategory
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereTagCategory
 
   test_acc_ResourceVSphereVAppContainer:
     docker: 
@@ -1170,8 +1170,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -1186,7 +1186,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereVAppContainer
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereVAppContainer
 
   test_acc_ResourceVSphereVAppEntity:
     docker: 
@@ -1197,8 +1197,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -1213,7 +1213,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereVAppEntity
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereVAppEntity
 
   test_acc_ResourceVSphereVirtualDisk:
     docker: 
@@ -1224,8 +1224,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -1240,7 +1240,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereVirtualDisk
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereVirtualDisk
 
   test_acc_ResourceVSphereVirtualMachine:
     docker: 
@@ -1251,8 +1251,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -1267,7 +1267,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereVirtualMachine
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereVirtualMachine
 
   test_acc_ResourceVSphereVirtualMachineSnapshot:
     docker: 
@@ -1278,8 +1278,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -1294,7 +1294,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereVirtualMachineSnapshot
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereVirtualMachineSnapshot
 
   test_acc_ResourceVSphereVmfsDatastore:
     docker: 
@@ -1305,8 +1305,8 @@ jobs:
     - run:
         name: "Move to GOPATH"
         command: |
-          mkdir -p /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
-          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere
+          mkdir -p $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+          mv /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere/* $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
     - add_ssh_keys:
         fingerprints:
           - "62:4d:8d:04:48:f7:0f:5a:63:da:de:a6:30:f4:b4:12"
@@ -1321,7 +1321,7 @@ jobs:
     - run:
         name: "Run Acceptance Tests"
         command: |
-          /home/hrich/go/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereVmfsDatastore
+          $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere/scripts/test_runner.sh ResourceVSphereVmfsDatastore
 
 workflows:
   version: 2
