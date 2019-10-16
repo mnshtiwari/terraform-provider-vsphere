@@ -3,7 +3,7 @@ jobs:
   test_acc_Client:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -30,7 +30,7 @@ jobs:
   test_acc_DataSourceVSphereComputeCluster:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -57,7 +57,7 @@ jobs:
   test_acc_DataSourceVSphereCustomAttribute:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -84,7 +84,7 @@ jobs:
   test_acc_DataSourceVSphereDatacenter:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -111,7 +111,7 @@ jobs:
   test_acc_DataSourceVSphereDatastore:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -138,7 +138,7 @@ jobs:
   test_acc_DataSourceVSphereDatastoreCluster:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -165,7 +165,7 @@ jobs:
   test_acc_DataSourceVSphereDistributedVirtualSwitch:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -192,7 +192,7 @@ jobs:
   test_acc_DataSourceVSphereFolder:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -219,7 +219,7 @@ jobs:
   test_acc_DataSourceVSphereHost:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -246,7 +246,7 @@ jobs:
   test_acc_DataSourceVSphereNetwork:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -273,7 +273,7 @@ jobs:
   test_acc_DataSourceVSphereResourcePool:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -300,7 +300,7 @@ jobs:
   test_acc_DataSourceVSphereTag:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -327,7 +327,7 @@ jobs:
   test_acc_DataSourceVSphereTagCategory:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -354,7 +354,7 @@ jobs:
   test_acc_DataSourceVSphereVAppContainer:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -381,7 +381,7 @@ jobs:
   test_acc_DataSourceVSphereVirtualMachine:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -408,7 +408,7 @@ jobs:
   test_acc_DataSourceVSphereVmfsDisks:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -435,7 +435,7 @@ jobs:
   test_acc_ResourceVSphereComputeCluster:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -462,7 +462,7 @@ jobs:
   test_acc_ResourceVSphereComputeClusterHostGroup:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -489,7 +489,7 @@ jobs:
   test_acc_ResourceVSphereComputeClusterVMAffinityRule:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -516,7 +516,7 @@ jobs:
   test_acc_ResourceVSphereComputeClusterVMAntiAffinityRule:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -543,7 +543,7 @@ jobs:
   test_acc_ResourceVSphereComputeClusterVMDependencyRule:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -570,7 +570,7 @@ jobs:
   test_acc_ResourceVSphereComputeClusterVMGroup:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -597,7 +597,7 @@ jobs:
   test_acc_ResourceVSphereComputeClusterVMHostRule:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -624,7 +624,7 @@ jobs:
   test_acc_ResourceVSphereCustomAttribute:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -651,7 +651,7 @@ jobs:
   test_acc_ResourceVSphereDatacenter:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -678,7 +678,7 @@ jobs:
   test_acc_ResourceVSphereDatastoreCluster:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -705,7 +705,7 @@ jobs:
   test_acc_ResourceVSphereDatastoreClusterVMAntiAffinityRule:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -732,7 +732,7 @@ jobs:
   test_acc_ResourceVSphereDistributedPortGroup:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -759,7 +759,7 @@ jobs:
   test_acc_ResourceVSphereDistributedVirtualSwitch:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -786,7 +786,7 @@ jobs:
   test_acc_ResourceVSphereDPMHostOverride:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -813,7 +813,7 @@ jobs:
   test_acc_ResourceVSphereDRSVMOverride:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -840,7 +840,7 @@ jobs:
   test_acc_ResourceVSphereFile:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -867,7 +867,7 @@ jobs:
   test_acc_ResourceVSphereFolder:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -894,7 +894,7 @@ jobs:
   test_acc_ResourceVSphereHAVMOverride:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -921,7 +921,7 @@ jobs:
   test_acc_ResourceVSphereHost:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -948,7 +948,7 @@ jobs:
   test_acc_ResourceVSphereHostPortGroup:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -975,7 +975,7 @@ jobs:
   test_acc_ResourceVSphereHostVirtualSwitch:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -1002,7 +1002,7 @@ jobs:
   test_acc_ResourceVSphereLicense:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -1029,7 +1029,7 @@ jobs:
   test_acc_ResourceVSphereNasDatastore:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -1056,7 +1056,7 @@ jobs:
   test_acc_ResourceVSphereResourcePool:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -1083,7 +1083,7 @@ jobs:
   test_acc_ResourceVSphereStorageDrsVMOverride:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -1110,7 +1110,7 @@ jobs:
   test_acc_ResourceVSphereTag:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -1137,7 +1137,7 @@ jobs:
   test_acc_ResourceVSphereTagCategory:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -1164,7 +1164,7 @@ jobs:
   test_acc_ResourceVSphereVAppContainer:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -1191,7 +1191,7 @@ jobs:
   test_acc_ResourceVSphereVAppEntity:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -1218,7 +1218,7 @@ jobs:
   test_acc_ResourceVSphereVirtualDisk:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -1245,7 +1245,7 @@ jobs:
   test_acc_ResourceVSphereVirtualMachine:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -1272,7 +1272,7 @@ jobs:
   test_acc_ResourceVSphereVirtualMachineSnapshot:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
@@ -1299,7 +1299,7 @@ jobs:
   test_acc_ResourceVSphereVmfsDatastore:
     docker: 
     - image: circleci/golang:1.13
-    working_directory: ~/src/github.com/terraform-providers/terraform-provider-vsphere
+    working_directory: /home/circleci/src/github.com/terraform-providers/terraform-provider-vsphere
     steps:
     - checkout
     - run:
