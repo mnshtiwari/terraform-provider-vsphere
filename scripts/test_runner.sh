@@ -6,7 +6,7 @@ main () {
   for testName in $testList; do 
     runTest $testName  || eCode=1
   done
-  exit eCode
+  exit $eCode
 }
 
 runTest () {
